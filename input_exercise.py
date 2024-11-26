@@ -1,18 +1,5 @@
 from random import randint
 
-<<<<<<< HEAD
-name = input("What is your name?\n")
-
-print("Hello", name + "!")
-
-number = int(input("Select a number from 1 to 10. \n"))
-choice = randint(0, 11)
-
-print("You selected", number)
-print("I selected", choice)
-=======
-
-
 def get_name():
     """
     Ask player for their name and return the name with greeting.
@@ -24,12 +11,17 @@ def get_name():
 
 def guess_number():
     """
-    Ask player to guess a number and generate random number by the program.
+    Ask player to guess a number.
     """
 
     number = int(input("Select a number from 1 to 10. \n"))
-    choice = randint(0, 11)
     print("You selected", number)
+    return number
+
+def get_random_number(start, end):
+    """
+    Generate random number by the program.
+    """
+    choice = randint(start, end)
     print("I selected", choice)
-    return number, choice
->>>>>>> 9d79ca0 (Add input exercise.)
+    return choice
